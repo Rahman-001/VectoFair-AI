@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- ── Viewport: mobile-native, no zoom, no bounce ── -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <!-- ── Meta ── -->
+    <meta name="description" content="VectoFair AI — AI-powered bias detection and fairness audit platform." />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="VectoFair AI" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>VectoFair AI — Bias Audit Platform</title>
+
+    <!-- ── Google Fonts (deferred so app feels instant) ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- ── Google Material Icons ── -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <!-- Fallback for icons if not loaded -->
+    <noscript>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    </noscript>
+
+    <!-- ── Google Charts ── -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      // Only load charts if google is available (offline fallback)
+      if (typeof google !== 'undefined') {
+        google.charts.load('current', { packages: ['corechart', 'gauge', 'bar'] });
+      }
+    </script>
+
+    <!-- ── Android native app feel ── -->
+    <style>
+      /* Prevent flash of white background */
+      html, body, #root {
+        background-color: #f7f8fc;
+        margin: 0; padding: 0;
+      }
+      /* Prevent double-tap zoom natively */
+      * { touch-action: manipulation; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "192434807552",
+    "project_id": "vectofair-ai",
+    "storage_bucket": "vectofair-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192434807552:android:a3200d731dd8dfbdb209e5",
+        "android_client_info": {
+          "package_name": "com.vectonix.vectofairai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_mcg-r6Q54fLCt7-zkxVP911FHRQN3DM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
